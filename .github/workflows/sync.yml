@@ -13,5 +13,5 @@ jobs:
     steps:
       - name: Sync fork with upstream
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.SYNC_TOKEN }}
         run: gh repo sync Koopy98/public-bugbounty-programs --source projectdiscovery/public-bugbounty-programs
